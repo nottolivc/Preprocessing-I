@@ -136,6 +136,27 @@ body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
 }
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: black;
+  font-family: 'Roboto';
+  width: 100%;
+  height: 120px;
+  font-size: 2rem;
+  text-align: center;
+  color: silver;
+  padding: 25px;
+}
+nav a {
+  text-decoration: none;
+  color: silver;
+}
+nav a:hover {
+  color: aqua;
+}
 .container {
   background-color: black;
   text-align: center;
@@ -149,6 +170,7 @@ body {
   min-height: 100%;
   color: white;
   font-size: 1.7rem;
+  letter-spacing: ;
 }
 .article {
   position: absolute;
@@ -169,39 +191,57 @@ body {
   border-radius: 16px;
   border: 1px solid white;
 }
-h1,
+
 h2,
-h3,
 h4 {
-  font-size: 2.8rem;
-  font-family: 'EB Garamond';
+  font-size: 2.4rem;
+  font-family: 'Roboto';
 }
 header {
   display: flex;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-bottom: 2px solid silver;
 }
-nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
   background-color: black;
-  font-family: 'EB Garamond';
-  width: 100%;
-  height: 120px;
-  font-size: 2.5rem;
-  text-align: center;
-  color: silver;
-  padding: 15px;
+  padding: 25px;
 }
-nav a {
-  text-decoration: none;
-  color: silver;
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  color: white;
+  background-color: white;
+  margin: 7px 0;
+  transition: 0.4s;
+  border-radius: 1px;
 }
-nav a:hover {
-  color: blue;
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
 }
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/* hide elements */
+.change nav a {
+  opacity: 0;
+}
+
 .mainlogo {
   border-radius: 16px;
   text-align: center;
@@ -225,7 +265,7 @@ nav a:hover {
   border: 2px solid #444;
   background-color: black;
 }
-.stack-logos .logos .logos:hover {
+.stack-logos .logos:hover: {
   background-color: #444;
 }
 .button1 {
@@ -242,6 +282,7 @@ nav a:hover {
 }
 .button1 a {
   color: black;
+  text-decoration: none;
 }
 .button2 {
   width: 120px;
@@ -257,6 +298,7 @@ nav a:hover {
 }
 .button2 a {
   color: black;
+  text-decoration: none;
 }
 footer {
   border-top: 2px solid white;
@@ -275,7 +317,7 @@ footer {
     font-family: 'EB Garamond';
     width: 100%;
     height: 120px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     color: silver;
     padding: 8px;
@@ -285,6 +327,6 @@ footer {
     color: silver;
   }
   .container nav a:hover {
-    color: blue;
+    color: aqua;
   }
 }

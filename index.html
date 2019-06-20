@@ -6,40 +6,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume (Beta)</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
-<header>
+<header id="navbar">
   <nav> 
     <a href="#"><h2>Home </h2></a>
-    <a href="#"><h2>About</h2></a>
+    <a href="#"><h2>About <i class="fab fa-linkedin"></h2></i></a>
     <a href="https://nottolivc.github.io/portfolio-website/">
-      <h2>Portfolio</h2></a>
-    <a href="#"><h2>Contact</h2></a>
+      <h2>Portfolio <i class="fab fa-github"></i></h2></a>
+    <a href="#"><h2>Contact <i class="fab fa-connectdevelop"></i></h2></a>
   </nav>
+
+<div class="menu-container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<script>
+  function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
 </header> 
 
 <body>
 
-<div class=container>
+<div class="container">
   <br>
-  <h1>My Resume</h1>
+  <h1></h1>
   <br>
   <img src="fbookprof.jpeg" alt="portrait" class="portrait">
 
+
   <main>
     <br>
-    <h1>Andrew Nottoli</h1>
+    <h2>Hi, I'm Andrew. </h2>
     <br>
 
   <section class="main-content">
     <article>
         <br>
-        <h4>Full Stack Developer, Technologist. </h4>
+        <h2>Full Stack Developer, Technologist. </h2>
         <br>
-      <h4>Recent Work History 2016 - Present: </h4>
+      <h3>Recent Work History 2016 - Present: </h3>
       <br>
       <p>Technologist, Developer, and Recruiter in Financial Services and Technology for a Firm that has relationships 
         with most major financial and technological institutions. Also, 
@@ -50,7 +63,7 @@
     <br>
     <h2>Skills:</h2>
     <br>
-    <p>Some of My Current Stack: (As well as HTML5, Sass, Less, JS, Django/Flask,) and just beginning Tensorflow.js </p>
+    <p>Some of My Current Stack: (As well as HTML5, SCSS, LESS, JS, Django/Flask,) and just beginning Tensorflow.js </p>
     <br>
   </section>
     <br>
@@ -69,7 +82,7 @@
             <img src="csslogo.jpeg" class="logos">
       </div>
         <br>
-        <hr>
+        <!--<hr>-->
         <br>
         <p>I enjoy adding value to your organization through the skills I use as a developer. I am passionate about learning and working on teams constantly striving to 
           acheive knowledge of new skillsets which I consider a skill in itself.</p>
@@ -81,7 +94,7 @@
       <br>
       <ul>
       <li>
-        <p>Saint Louis University 2009 - 12:  BA, Track for International Business 
+        <p>Saint Louis University 2009 - 2012:  BA, Track for International Business 
         and Economics, Madrid Spain. </p>
       </li>
       <br>
@@ -104,13 +117,13 @@
 </main>
 <br>
 <footer>
-    <nav>
-      <a href="#"><h2>Home </h2></a>
-      <a href="#"><h2>About</h2></a>
-      <a href="https://nottolivc.github.io/portfolio-website/">
-        <h2>Portfolio</h2></a>
-      <a href="#"><h2>Contact</h2></a>
-    </nav>
+  <nav id="navbar"> 
+    <a href="#"><h2>Home </h2></a>
+    <a href="#"><h2>About <i class="fab fa-linkedin"></h2></i></a>
+    <a href="https://nottolivc.github.io/portfolio-website/">
+      <h2>Portfolio <i class="fab fa-github"></i></h2></a>
+    <a href="#"><h2>Contact <i class="fab fa-connectdevelop"></i></h2></a>
+  </nav>
     <br>
     <p style="text-align:center;">© 2019 NottoliVC - andrew@nottolidev.com </p>
     <br>
