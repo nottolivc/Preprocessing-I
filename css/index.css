@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
+   
 */
 html,
 body,
@@ -144,7 +144,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("images/background.jpg");
+  background-image: url("../images/background.jpg");
   line-height: 1.2;
   min-height: 100%;
   color: white;
